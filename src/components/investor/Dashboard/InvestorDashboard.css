@@ -1,0 +1,122 @@
+.investor-dashboard {
+    padding: 2rem;
+  }
+  
+  .investor-dashboard__header {
+    margin-bottom: 2rem;
+  }
+  
+  .investor-dashboard__header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .investor-dashboard__subtitle {
+    color: #6b7280;
+    margin-top: 0.5rem;
+  }
+  
+  .investor-dashboard__error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .investor-dashboard__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .investor-dashboard__main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .investor-dashboard__recent {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investor-dashboard__recent h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .investor-dashboard__transactions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .investor-dashboard__transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 8px;
+  }
+  
+  .transaction__info h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .transaction__info p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0.25rem 0 0 0;
+  }
+  
+  .transaction__amount {
+    text-align: right;
+  }
+  
+  .amount--buy {
+    color: #059669;
+  }
+  
+  .amount--sell {
+    color: #dc2626;
+  }
+  
+  .investor-dashboard__empty {
+    text-align: center;
+    color: #6b7280;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .investor-dashboard__content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .investor-dashboard {
+      padding: 1rem;
+    }
+  
+    .investor-dashboard__transaction {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  
+    .transaction__amount {
+      text-align: center;
+    }
+  }

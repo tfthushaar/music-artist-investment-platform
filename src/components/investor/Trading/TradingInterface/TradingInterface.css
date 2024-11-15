@@ -1,0 +1,196 @@
+.trading-interface {
+    padding: 2rem;
+  }
+  
+  .trading-interface__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artist-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .artist-info img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .artist-info h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .artist-genre {
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  .price-info {
+    text-align: right;
+  }
+  
+  .current-price span,
+  .price-change span {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .current-price h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0.25rem 0;
+  }
+  
+  .price-change h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.25rem 0;
+  }
+  
+  .price-change h3.positive {
+    color: #059669;
+  }
+  
+  .price-change h3.negative {
+    color: #dc2626;
+  }
+  
+  .trading-interface__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  
+  .trading-interface__main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .trade-form {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trade-form__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .trade-type {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .trade-type.active {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .trade-type:not(.active) {
+    background: #f3f4f6;
+    color: #6b7280;
+  }
+  
+  .trade-form__error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .trade-summary {
+    background: #f9fafb;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .trade-summary__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #374151;
+  }
+  
+  .trade-summary__row span:last-child {
+    font-weight: 600;
+  }
+  
+  @media (max-width: 1024px) {
+    .trading-interface__content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .trading-interface {
+      padding: 1rem;
+    }
+  
+    .trading-interface__header {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .artist-info {
+      flex-direction: column;
+    }
+  
+    .price-info {
+      text-align: center;
+    }
+  }

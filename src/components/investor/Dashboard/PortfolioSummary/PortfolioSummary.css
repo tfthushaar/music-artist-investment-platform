@@ -1,0 +1,116 @@
+.portfolio-summary {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-summary__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .portfolio-summary__header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .portfolio-summary__date {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .portfolio-summary__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .portfolio-summary__stat {
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 8px;
+  }
+  
+  .portfolio-summary__stat h3 {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .portfolio-summary__stat p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .return--positive {
+    color: #059669;
+  }
+  
+  .return--negative {
+    color: #dc2626;
+  }
+  
+  .portfolio-summary__holdings {
+    margin-top: 2rem;
+  }
+  
+  .portfolio-summary__holdings h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .portfolio-summary__table {
+    overflow-x: auto;
+  }
+  
+  .portfolio-summary__table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .portfolio-summary__table th {
+    text-align: left;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .portfolio-summary__table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .artist-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .artist-info img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-summary__table {
+      margin: 0 -1.5rem;
+    }
+  
+    .portfolio-summary__table table {
+      min-width: 600px;
+    }
+  }

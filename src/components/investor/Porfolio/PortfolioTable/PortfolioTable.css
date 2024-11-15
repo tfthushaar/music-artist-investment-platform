@@ -1,0 +1,101 @@
+.portfolio-table {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-table__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .portfolio-table__header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .portfolio-table__container {
+    overflow-x: auto;
+  }
+  
+  .portfolio-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .portfolio-table th {
+    text-align: left;
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .portfolio-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    color: #1f2937;
+  }
+  
+  .artist-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .artist-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .artist-info div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .artist-name {
+    font-weight: 500;
+    color: #1f2937;
+  }
+  
+  .artist-genre {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .return-value {
+    font-weight: 500;
+  }
+  
+  .return-value.positive {
+    color: #059669;
+  }
+  
+  .return-value.negative {
+    color: #dc2626;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .portfolio-table {
+      margin: 0 -1rem;
+      border-radius: 0;
+    }
+  
+    .portfolio-table table {
+      min-width: 900px;
+    }
+  }

@@ -1,0 +1,62 @@
+.artist-dashboard {
+    padding: 2rem;
+  }
+  
+  .artist-dashboard__header {
+    margin-bottom: 2rem;
+  }
+  
+  .artist-dashboard__header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .artist-dashboard__subtitle {
+    color: #6b7280;
+  }
+  
+  .artist-dashboard__metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .artist-dashboard__charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .artist-dashboard__chart-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artist-dashboard__chart-container h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .artist-dashboard__recent-activity {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .artist-dashboard {
+      padding: 1rem;
+    }
+  
+    .artist-dashboard__charts {
+      grid-template-columns: 1fr;
+    }
+  }

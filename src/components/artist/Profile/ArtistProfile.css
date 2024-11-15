@@ -1,0 +1,117 @@
+.artist-profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .artist-profile__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .artist-profile__photo-container {
+    position: relative;
+  }
+  
+  .artist-profile__photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .artist-profile__photo-input {
+    display: none;
+  }
+  
+  .artist-profile__photo-label {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .artist-profile__photo-label:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .artist-profile__upload-progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+  }
+  
+  .artist-profile__header-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .artist-profile__header-info p {
+    color: #6b7280;
+    margin: 0.5rem 0 0;
+  }
+  
+  .artist-profile__error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .artist-profile__success {
+    background-color: #d1fae5;
+    color: #059669;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .artist-profile__section {
+    margin-bottom: 2rem;
+  }
+  
+  .artist-profile__section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .artist-profile__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 640px) {
+    .artist-profile__header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .artist-profile__actions {
+      flex-direction: column;
+    }
+  
+    .artist-profile__actions button {
+      width: 100%;
+    }
+  }

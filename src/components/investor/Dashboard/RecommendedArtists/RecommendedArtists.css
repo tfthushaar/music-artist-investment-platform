@@ -1,0 +1,118 @@
+.recommended-artists {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recommended-artists h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .recommended-artists__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .artist-card {
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artist-card__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .artist-card__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .artist-card__info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .artist-card__genre {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .artist-card__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .artist-card__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .stat-value {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .stat-value.positive {
+    color: #059669;
+  }
+  
+  .stat-value.negative {
+    color: #dc2626;
+  }
+  
+  .artist-card__actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .recommended-artists__more {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    color: #2563eb;
+    text-decoration: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .recommended-artists__more:hover {
+    background-color: #f9fafb;
+  }
+  
+  @media (max-width: 1024px) {
+    .recommended-artists__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+  }

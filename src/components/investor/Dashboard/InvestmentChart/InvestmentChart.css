@@ -1,0 +1,67 @@
+.investment-chart {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investment-chart__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .investment-chart__header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  .investment-chart__timeframes {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .timeframe-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: white;
+    color: #6b7280;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .timeframe-button:hover {
+    background: #f9fafb;
+  }
+  
+  .timeframe-button.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  .investment-chart__container {
+    height: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .investment-chart__header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .investment-chart__timeframes {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+  
+    .timeframe-button {
+      white-space: nowrap;
+    }
+  }

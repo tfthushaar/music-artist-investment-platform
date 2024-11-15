@@ -1,0 +1,136 @@
+.home {
+    min-height: 100vh;
+  }
+  
+  .home__hero {
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+  }
+  
+  .home__hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .home__title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .home__cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .home__section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 4rem 0 2rem;
+  }
+  
+  .home__artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .home__artist-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .home__artist-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .home__artist-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .home__artist-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem;
+  }
+  
+  .home__artist-genre {
+    color: #6b7280;
+    margin: 0 1rem;
+  }
+  
+  .home__artist-link {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background: #f3f4f6;
+    color: #2563eb;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .home__artist-link:hover {
+    background: #e5e7eb;
+  }
+  
+  .home__how-it-works {
+    background: #f9fafb;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+  }
+  
+  .home__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .home__step {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .home__step-icon {
+    width: 48px;
+    height: 48px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 auto 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .home__title {
+      font-size: 2.5rem;
+    }
+  
+    .home__cta-buttons {
+      flex-direction: column;
+    }
+  }
